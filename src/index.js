@@ -1,1 +1,3 @@
-console.log('Mama mia!');
+import pageLoad from "./page-load";
+
+pageLoad(document);

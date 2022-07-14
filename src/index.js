@@ -1,4 +1,5 @@
-import pageLoad from "./page-load.js";
+import pageLoad from "./page.js";
 
 const content = pageLoad(document);
 console.log(content);
+

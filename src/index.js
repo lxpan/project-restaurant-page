@@ -5,19 +5,19 @@ function createTabGroup() {
     const tabGroup = document.createElement('div');
     tabGroup.classList.add('tabs');
 
-    const buttonA = document.createElement('button');
-    const buttonB = document.createElement('button');
-    const buttonC = document.createElement('button');
+    const homeTab = document.createElement('button');
+    const menuTab = document.createElement('button');
+    const contactTab = document.createElement('button');
 
-    buttonA.id = 'tabA';
-    buttonB.id = 'tabB';
-    buttonC.id = 'tabC';
+    homeTab.id = 'home';
+    menuTab.id = 'menu';
+    contactTab.id = 'contact';
 
-    buttonA.textContent = 'Button A';
-    buttonB.textContent = 'Button B';
-    buttonC.textContent = 'Button C';
+    homeTab.textContent = 'Home';
+    menuTab.textContent = 'Menu';
+    contactTab.textContent = 'Contact';
 
-    tabGroup.append(buttonA, buttonB, buttonC);
+    tabGroup.append(homeTab, menuTab, contactTab);
     
     return tabGroup;
 }

@@ -5,6 +5,8 @@ const contentDiv = document.createElement('div');
 contentDiv.id = 'content';
 document.body.appendChild(contentDiv);
 
+// Load the placeholder homepage into #content div
 const content = pageLoad(document);
+
 console.log(__webpack_public_path__);
 console.log(content);

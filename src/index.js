@@ -2,20 +2,22 @@ import pageLoad from "./page.js";
 import './style.css';
 
 
-function createTabGroup() {
+function createTabs() {
     const tabGroup = document.createElement('nav');
     tabGroup.classList.add('tabs');
 
     const tabList = document.createElement('ul');
-
     const homeTab = document.createElement('li');
     const menuTab = document.createElement('li');
     const contactTab = document.createElement('li');
     tabList.append(homeTab, menuTab, contactTab)
 
-    homeTab.textContent = 'Home';
-    menuTab.textContent = 'Menu';
-    contactTab.textContent = 'Contact';
+    for (const tab of tabList.children) {
+        const tabAnchor = document.createElement('a');
+        tabAnchor.href = '#tab-one'
+        tabAnchor.textContent = 'TabName';
+        tab.appendChild(tabAnchor);
+    }
 
     tabGroup.append(tabList);
     
@@ -39,7 +41,7 @@ function createTabContent(parent) {
 }
 
 // Load tab group
-document.body.appendChild(createTabGroup());
+document.body.appendChild(createTabs());
 
 // Create our skeleton #content div
 const contentDiv = document.createElement('div');

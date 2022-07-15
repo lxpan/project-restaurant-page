@@ -8,3 +8,12 @@ body {
 .tabContent {
     display: none;
 }
+
+.tabs ul {
+    display: flex;
+    gap: 10px;
+}
+
+.tabs li {
+    display: inline;
+}

@@ -12,9 +12,13 @@ function createTabs() {
     const contactTab = document.createElement('li');
     tabList.append(homeTab, menuTab, contactTab)
 
-    for (const tab of tabList.children) {
+    const tabIDs = ['#tabOne', '#tabTwo', '#tabThree'];
+
+    for (let i = 0; i < tabList.children.length; i++) {
+        const tab = tabList.children[i];
         const tabAnchor = document.createElement('a');
-        tabAnchor.href = '#tab-one'
+
+        tabAnchor.href = tabIDs[i];
         tabAnchor.textContent = 'TabName';
         tab.appendChild(tabAnchor);
     }

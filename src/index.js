@@ -37,18 +37,21 @@ function createTabContent(parent) {
     const tabDivArr =[homeDiv, MenuDiv, contactDiv]
     let counter = 1;
 
+    // Add classes and IDs to each tab container
     for (let i = 0; i < tabDivArr.length; i++) {
         const div = tabDivArr[i];
 
         div.classList.add('tabContent');
         div.id = TAB_ID[i];
 
+        // Make 'home' tab active by default and inject content from module
         if(i == 0) { 
             div.classList.add('is-active');
+            pageLoad(div);
+        } else {
+            div.textContent = `This is a tab content div for ${div.classList[0]} ${counter++}!`;
         }
-
         // insert tab module's function here
-        div.textContent = `This is a tab content div for ${div.classList[0]} ${counter++}!`;
     }
 
     parent.append(homeDiv, MenuDiv, contactDiv);
@@ -64,7 +67,7 @@ createTabContent(contentDiv);
 document.body.appendChild(contentDiv);
 
 // Load the placeholder homepage into #content div
-const content = pageLoad(document);
+// const content = pageLoad(document);
 
-console.log(__webpack_public_path__);
-console.log(content);
+// console.log(__webpack_public_path__);
+console.log(contentDiv);

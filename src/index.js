@@ -3,22 +3,21 @@ import './style.css';
 
 
 function createTabGroup() {
-    const tabGroup = document.createElement('div');
+    const tabGroup = document.createElement('nav');
     tabGroup.classList.add('tabs');
 
-    const homeTab = document.createElement('button');
-    const menuTab = document.createElement('button');
-    const contactTab = document.createElement('button');
+    const tabList = document.createElement('ul');
 
-    homeTab.id = 'home';
-    menuTab.id = 'menu';
-    contactTab.id = 'contact';
+    const homeTab = document.createElement('li');
+    const menuTab = document.createElement('li');
+    const contactTab = document.createElement('li');
+    tabList.append(homeTab, menuTab, contactTab)
 
     homeTab.textContent = 'Home';
     menuTab.textContent = 'Menu';
     contactTab.textContent = 'Contact';
 
-    tabGroup.append(homeTab, menuTab, contactTab);
+    tabGroup.append(tabList);
     
     return tabGroup;
 }

@@ -34,13 +34,16 @@ function createTabContent(parent) {
     const MenuDiv = document.createElement('div');
     const contactDiv = document.createElement('div');
 
-    const tabDiv =[homeDiv, MenuDiv, contactDiv]
+    const tabDivArr =[homeDiv, MenuDiv, contactDiv]
     let counter = 1;
-    tabDiv.forEach(div => {
+
+    for (let i = 0; i < tabDivArr.length; i++) {
+        const div = tabDivArr[i];
         div.classList.add('tabContent');
+        div.id = TAB_ID[i];
         // insert tab module's function here
         div.textContent = `This is a tab content div for ${div.classList} ${counter++}!`;
-    });
+    }
 
     parent.append(homeDiv, MenuDiv, contactDiv);
 }

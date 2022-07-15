@@ -12,8 +12,15 @@ body {
 .tabs ul {
     display: flex;
     gap: 10px;
+    padding-left: 0px;
+    background-color: gold;
+    font-size: 2rem;
 }
 
 .tabs li {
     display: inline;
+}
+
+.tabs a {
+    text-decoration: none;
 }

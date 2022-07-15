@@ -2,6 +2,9 @@ import pageLoad from "./page.js";
 import './style.css';
 
 
+const TAB_ID = ['#tabOne', '#tabTwo', '#tabThree'];
+
+
 function createTabs() {
     const tabGroup = document.createElement('nav');
     tabGroup.classList.add('tabs');
@@ -12,13 +15,11 @@ function createTabs() {
     const contactTab = document.createElement('li');
     tabList.append(homeTab, menuTab, contactTab)
 
-    const tabIDs = ['#tabOne', '#tabTwo', '#tabThree'];
-
     for (let i = 0; i < tabList.children.length; i++) {
         const tab = tabList.children[i];
         const tabAnchor = document.createElement('a');
 
-        tabAnchor.href = tabIDs[i];
+        tabAnchor.href = TAB_ID[i];
         tabAnchor.textContent = 'TabName';
         tab.appendChild(tabAnchor);
     }

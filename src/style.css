@@ -9,6 +9,10 @@ body {
     display: none;
 }
 
+.is-active {
+    display: block;
+}
+
 .tabs ul {
     display: flex;
     gap: 10px;

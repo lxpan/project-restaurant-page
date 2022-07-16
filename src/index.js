@@ -20,8 +20,8 @@ function createTabs() {
     function removeActiveTabNav() {
         const tabContentDivs = document.querySelector('#content');
 
-        console.log(tabList.children);
-        console.log(content.children);
+        // console.log(tabList.children);
+        // console.log(content.children);
 
         for (const tab of tabList.children) {
             tab.classList.remove('is-active');

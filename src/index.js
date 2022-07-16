@@ -13,8 +13,17 @@ function createTabs() {
     const homeTab = document.createElement('li');
     const menuTab = document.createElement('li');
     const contactTab = document.createElement('li');
+    
     tabList.append(homeTab, menuTab, contactTab)
 
+    // removes 'is-active' class from all tabs (tab nav elements)
+    function removeActiveTabNav() {
+        for (const tab of tabList.children) {
+            tab.classList.remove('is-active');
+        }
+    }
+
+    // for each tab
     for (let i = 0; i < tabList.children.length; i++) {
         const tab = tabList.children[i];
         const tabAnchor = document.createElement('a');
@@ -22,6 +31,18 @@ function createTabs() {
         tabAnchor.href = TAB_ID[i];
         tabAnchor.textContent = 'TabName';
         tab.appendChild(tabAnchor);
+
+        // add eventListener to tab
+        tab.addEventListener('click', e => {
+            e.preventDefault();
+            // remove all other active tabs
+            removeActiveTabNav();
+            // make this tab active
+            tab.classList.add('is-active');
+
+            // make the matching section active
+            makeSectionActive(tab);
+        })
     }
 
     tabGroup.append(tabList);
@@ -68,6 +89,5 @@ document.body.appendChild(contentDiv);
 
 // Load the placeholder homepage into #content div
 // const content = pageLoad(document);
-
 // console.log(__webpack_public_path__);
 console.log(contentDiv);

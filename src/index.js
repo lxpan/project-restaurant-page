@@ -9,18 +9,28 @@ function createTabs() {
     const tabGroup = document.createElement('nav');
     tabGroup.classList.add('tabs');
 
-    const tabList = document.createElement('ul');
     const homeTab = document.createElement('li');
     const menuTab = document.createElement('li');
     const contactTab = document.createElement('li');
-    
+
+    const tabList = document.createElement('ul');
     tabList.append(homeTab, menuTab, contactTab)
+
+    const tabContentDivs = document.querySelectorAll('.tabContent');
 
     // removes 'is-active' class from all tabs (tab nav elements)
     function removeActiveTabNav() {
         for (const tab of tabList.children) {
             tab.classList.remove('is-active');
         }
+    }
+
+    function makeTabSectionActive(navTab) {
+        const href = navTab.querySelector('a').getAttribute('href');
+        console.log(href);
+        const matchingTabSection = document.getElementById(href);
+        console.log(matchingTabSection);
+        matchingTabSection.classList.add('is-active');
     }
 
     // for each tab
@@ -41,7 +51,7 @@ function createTabs() {
             tab.classList.add('is-active');
 
             // make the matching section active
-            makeSectionActive(tab);
+            makeTabSectionActive(tab);
         })
     }
 

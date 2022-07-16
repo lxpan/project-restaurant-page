@@ -9,7 +9,7 @@ body {
     display: none;
 }
 
-.is-active {
+.tabContent.is-active {
     display: block;
 }
 

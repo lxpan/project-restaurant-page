@@ -3,6 +3,7 @@ import './style.css';
 
 
 const TAB_ID = ['#tabOne', '#tabTwo', '#tabThree'];
+const TAB_NAMES = ['Home', 'Menu', 'Contact'];
 
 
 function createTabs() {
@@ -46,7 +47,7 @@ function createTabs() {
         const tabAnchor = document.createElement('a');
 
         tabAnchor.href = TAB_ID[i];
-        tabAnchor.textContent = 'TabName';
+        tabAnchor.textContent = TAB_NAMES[i];
         tab.appendChild(tabAnchor);
 
         // add eventListener to tab

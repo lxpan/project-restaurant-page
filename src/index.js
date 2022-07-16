@@ -16,20 +16,27 @@ function createTabs() {
     const tabList = document.createElement('ul');
     tabList.append(homeTab, menuTab, contactTab)
 
-    const tabContentDivs = document.querySelectorAll('.tabContent');
-
     // removes 'is-active' class from all tabs (tab nav elements)
     function removeActiveTabNav() {
+        const tabContentDivs = document.querySelector('#content');
+
+        console.log(tabList.children);
+        console.log(content.children);
+
         for (const tab of tabList.children) {
             tab.classList.remove('is-active');
+        }
+
+        for (const div of tabContentDivs.children) {
+            div.classList.remove('is-active');
         }
     }
 
     function makeTabSectionActive(navTab) {
         const href = navTab.querySelector('a').getAttribute('href');
-        console.log(href);
+        // console.log(href);
         const matchingTabSection = document.getElementById(href);
-        console.log(matchingTabSection);
+        // console.log(matchingTabSection);
         matchingTabSection.classList.add('is-active');
     }
 
@@ -45,7 +52,7 @@ function createTabs() {
         // add eventListener to tab
         tab.addEventListener('click', e => {
             e.preventDefault();
-            // remove all other active tabs
+            // remove all other active tabs (including content divs)
             removeActiveTabNav();
             // make this tab active
             tab.classList.add('is-active');
@@ -100,4 +107,4 @@ document.body.appendChild(contentDiv);
 // Load the placeholder homepage into #content div
 // const content = pageLoad(document);
 // console.log(__webpack_public_path__);
-console.log(contentDiv);
+// console.log(contentDiv);

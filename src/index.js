@@ -67,7 +67,7 @@ function createTabs() {
     return tabGroup;
 }
 
-function createTabContent(parent) {
+function populateTabContent(parent) {
     const homeDiv = document.createElement('div');
     const MenuDiv = document.createElement('div');
     const contactDiv = document.createElement('div');
@@ -100,6 +100,5 @@ document.body.appendChild(createTabs());
 // Create our skeleton #content div
 const contentDiv = document.createElement('div');
 contentDiv.id = 'content';
-createTabContent(contentDiv);
+populateTabContent(contentDiv);
 document.body.appendChild(contentDiv);
-

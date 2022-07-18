@@ -105,7 +105,3 @@ contentDiv.id = 'content';
 createTabContent(contentDiv);
 document.body.appendChild(contentDiv);
 
-// Load the placeholder homepage into #content div
-// const content = pageLoad(document);
-// console.log(__webpack_public_path__);
-// console.log(contentDiv);

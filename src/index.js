@@ -1,10 +1,11 @@
 import loadHome from "./home.js";
+import loadMenu from './menu';
 import './style.css';
 
 
 const TAB_ID = ['#tabOne', '#tabTwo', '#tabThree'];
 const TAB_NAMES = ['Home', 'Menu', 'Contact'];
-const TAB_LOADER = [loadHome];
+const TAB_LOADER = [loadHome, loadMenu, loadMenu];
 
 
 function createTabs() {
@@ -89,7 +90,8 @@ function createTabContent(parent) {
             div.classList.add('is-active');
             TAB_LOADER[0](div);
         } else {
-            div.textContent = `This is a tab content div for ${div.classList[0]} ${counter++}!`;
+            TAB_LOADER[i](div);
+            // div.textContent = `This is a tab content div for ${div.classList[0]} ${counter++}!`;
         }
         // insert tab module's function here
     }

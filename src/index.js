@@ -9,7 +9,7 @@ const TAB_NAMES = ['Home', 'Menu', 'Contact'];
 const TAB_LOADER = [loadHome, loadMenu, loadContact];
 
 
-function createTabs() {
+function createTabNavigation() {
     const tabGroup = document.createElement('nav');
     tabGroup.classList.add('tabs');
 
@@ -95,7 +95,7 @@ function populateTabContent(parent) {
 }
 
 // Load tab group
-document.body.appendChild(createTabs());
+document.body.appendChild(createTabNavigation());
 
 // Create our skeleton #content div
 const contentDiv = document.createElement('div');

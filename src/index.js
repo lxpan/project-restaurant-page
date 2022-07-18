@@ -4,6 +4,7 @@ import './style.css';
 
 const TAB_ID = ['#tabOne', '#tabTwo', '#tabThree'];
 const TAB_NAMES = ['Home', 'Menu', 'Contact'];
+const TAB_LOADER = [loadHome];
 
 
 function createTabs() {
@@ -86,7 +87,7 @@ function createTabContent(parent) {
         // Make 'home' tab active by default and inject content from module
         if(i == 0) { 
             div.classList.add('is-active');
-            loadHome(div);
+            TAB_LOADER[0](div);
         } else {
             div.textContent = `This is a tab content div for ${div.classList[0]} ${counter++}!`;
         }

@@ -94,17 +94,17 @@ function populateTabContent(parent) {
     parent.append(homeDiv, MenuDiv, contactDiv);
 }
 
-function loadTabContent() {
+function loadTabContent(parent) {
     const contentDiv = document.createElement('div');
     contentDiv.id = 'content';
     populateTabContent(contentDiv);
-    return contentDiv;
+    parent.body.appendChild(contentDiv);
 }
 
 // Load tab group
 createTabNavigation(document);
 // Load tab content
-document.body.appendChild(loadTabContent());
+loadTabContent(document);
 
 
 

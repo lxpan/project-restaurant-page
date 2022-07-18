@@ -24,9 +24,6 @@ function createTabs() {
     function removeActiveTabNav() {
         const tabContentDivs = document.querySelector('#content');
 
-        // console.log(tabList.children);
-        // console.log(content.children);
-
         for (const tab of tabList.children) {
             tab.classList.remove('is-active');
         }
@@ -38,9 +35,8 @@ function createTabs() {
 
     function makeTabSectionActive(navTab) {
         const href = navTab.querySelector('a').getAttribute('href');
-        // console.log(href);
         const matchingTabSection = document.getElementById(href);
-        // console.log(matchingTabSection);
+
         matchingTabSection.classList.add('is-active');
     }
 
@@ -92,9 +88,7 @@ function createTabContent(parent) {
             TAB_LOADER[0](div);
         } else {
             TAB_LOADER[i](div);
-            // div.textContent = `This is a tab content div for ${div.classList[0]} ${counter++}!`;
         }
-        // insert tab module's function here
     }
 
     parent.append(homeDiv, MenuDiv, contactDiv);

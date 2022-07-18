@@ -1,4 +1,4 @@
-import pageLoad from "./page.js";
+import loadHome from "./home.js";
 import './style.css';
 
 
@@ -86,7 +86,7 @@ function createTabContent(parent) {
         // Make 'home' tab active by default and inject content from module
         if(i == 0) { 
             div.classList.add('is-active');
-            pageLoad(div);
+            loadHome(div);
         } else {
             div.textContent = `This is a tab content div for ${div.classList[0]} ${counter++}!`;
         }

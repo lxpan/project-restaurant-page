@@ -1,6 +1,6 @@
 import Trevor from './tjames.jpg';
 
-export default function pageLoad(parent) {
+export default function loadHome(parent) {
     // const content = document.querySelector('#content');
     const container = document.createElement('div');
     const headingOne = document.createElement('h1');

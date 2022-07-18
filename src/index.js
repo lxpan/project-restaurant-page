@@ -1,11 +1,12 @@
 import loadHome from "./home.js";
 import loadMenu from './menu';
+import loadContact from './contact.js';
 import './style.css';
 
 
 const TAB_ID = ['#tabOne', '#tabTwo', '#tabThree'];
 const TAB_NAMES = ['Home', 'Menu', 'Contact'];
-const TAB_LOADER = [loadHome, loadMenu, loadMenu];
+const TAB_LOADER = [loadHome, loadMenu, loadContact];
 
 
 function createTabs() {

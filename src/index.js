@@ -105,6 +105,3 @@ function loadTabContent(parent) {
 createTabNavigation(document);
 // Load tab content
 loadTabContent(document);
-
-
-

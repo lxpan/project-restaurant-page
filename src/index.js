@@ -101,7 +101,5 @@ function loadTabContent(parent) {
     parent.body.appendChild(contentDiv);
 }
 
-// Load tab group
 createTabNavigation(document);
-// Load tab content
 loadTabContent(document);

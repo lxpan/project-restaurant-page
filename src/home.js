@@ -10,8 +10,8 @@ export default function loadHome(parent) {
     homeImage.className = 'homeSplash';
 
     headingOne.textContent = 'Shinjuku 2049 Vending Corp.';
-    headingTwo.textContent = 'Tai Hao Le!';
-    paragraph.textContent = 'Hey guys check it out it\'s Trevor James! Let me dazzle you with my slurping and mastication skills!';
+    headingTwo.textContent = 'Bringing convenience back to the streets.';
+    paragraph.textContent = 'Welcome to Shinjuku 2049 Vending Corp! We have the largest selection of edibles and accessories.';
 
     parent.append(headingOne, headingTwo, paragraph, homeImage);
 }

@@ -8,7 +8,7 @@ export default function loadHome(parent) {
     const homeImage = new Image();
     homeImage.src = Trevor;
 
-    headingOne.textContent = 'The Trevor James Appreciation Restaurant';
+    headingOne.textContent = 'Shinjuku 2049 Vending Corp.';
     headingTwo.textContent = 'Tai Hao Le!';
     paragraph.textContent = 'Hey guys check it out it\'s Trevor James! Let me dazzle you with my slurping and mastication skills!';
 

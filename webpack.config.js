@@ -11,7 +11,7 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Trevor James Appreciation Restaurant',
+            title: 'Shinjuku 2049 Vending Corp.',
         }),
     ],
     output: {

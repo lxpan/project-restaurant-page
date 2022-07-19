@@ -1,4 +1,4 @@
-import Trevor from './tjames.jpg';
+import shinjukuVending from './images/shinjuku-vending.jpg';
 
 export default function loadHome(parent) {
     const headingOne = document.createElement('h1');
@@ -6,7 +6,8 @@ export default function loadHome(parent) {
     const paragraph = document.createElement('p');
     
     const homeImage = new Image();
-    homeImage.src = Trevor;
+    homeImage.src = shinjukuVending;
+    homeImage.className = 'homeSplash';
 
     headingOne.textContent = 'Shinjuku 2049 Vending Corp.';
     headingTwo.textContent = 'Tai Hao Le!';

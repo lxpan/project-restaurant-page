@@ -28,3 +28,7 @@ body {
 .tabs a {
     text-decoration: none;
 }
+
+.homeSplash {
+    width: 60vw;
+}

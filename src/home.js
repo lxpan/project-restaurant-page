@@ -6,8 +6,8 @@ export default function loadHome(parent) {
     const paragraph = document.createElement('p');
     
     const homeImage = new Image();
-    homeImage.src = shinjukuVending;
-    homeImage.className = 'homeSplash';
+    // homeImage.src = shinjukuVending;
+    // homeImage.className = 'homeSplash';
 
     headingOne.textContent = 'Shinjuku 2049 Vending Corp.';
     headingTwo.textContent = 'Bringing convenience back to the streets.';

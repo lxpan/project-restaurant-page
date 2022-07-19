@@ -1,9 +1,19 @@
+html {
+    background-image: url('./images/shinjuku-vending.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .tabContent {
@@ -44,11 +54,3 @@ body {
     height: 100%;
 } */
 
-html {
-    background-image: url('./images/cool.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
-    min-width: 100vw;
-    overflow-x: hidden;
-}

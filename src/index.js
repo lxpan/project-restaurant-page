@@ -103,8 +103,18 @@ function loadTabContent(parent) {
 }
 
 function createFooter(parent) {
+    const footer = document.createElement('footer');
+    const bgCredit = document.createElement('span');
+    const otherCredit = document.createElement('span');
+    
+    bgCredit.textContent = 'Background photo by Aleksandar Pasaric';
+    otherCredit.textContent = 'Other credits go to: ___';
 
+    footer.append(bgCredit, otherCredit);
+
+    parent.body.appendChild(footer);
 }
 
 createHeader(document);
 loadTabContent(document);
+createFooter(document);

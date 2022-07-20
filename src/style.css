@@ -1,6 +1,8 @@
 :root {
     --content-background-colour: rgba(19, 5, 89, 0.8);
     --content-font-colour: white;
+    --section-border-colour: white;
+    --nav-hover-colour: hotpink;
 }
 
 html {
@@ -47,7 +49,7 @@ body {
 }
 
 .tabs a:hover {
-    color: hotpink;
+    color: var(--nav-hover-colour);
 }
 
 .homeSplash {
@@ -57,13 +59,13 @@ body {
 #content,
 footer {
     width: 40vw;
-    border: 3px solid white;
+    border: 3px solid var(--section-border-colour);
     border-radius: 10px;
 
     /* background-color: rgba(105,105,105,0.8); */
     background-color: var(--content-background-colour);
     text-align: justify;
-    color: white;
+    color: var(--content-font-colour);
 
     padding: 0px 80px 100px;
 }

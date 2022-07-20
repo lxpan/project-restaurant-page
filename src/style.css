@@ -28,7 +28,7 @@ body {
     display: flex;
     gap: 10px;
     padding-left: 0px;
-    background-color: gold;
+    /* background-color: gold; */
     font-size: 2rem;
 }
 
@@ -36,8 +36,9 @@ body {
     display: inline;
 }
 
-.tabs a {
-    text-decoration: none;
+.tabs a, a:link, a:visited {
+    text-decoration: underline;
+    color: white;
 }
 
 .homeSplash {

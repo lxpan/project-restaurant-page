@@ -75,7 +75,6 @@ function populateTabContent(parent) {
     const contactDiv = document.createElement('div');
 
     const tabDivArr =[homeDiv, MenuDiv, contactDiv]
-    let counter = 1;
 
     // Add classes and IDs to each tab container
     for (let i = 0; i < tabDivArr.length; i++) {
@@ -101,6 +100,10 @@ function loadTabContent(parent) {
     contentDiv.id = 'content';
     populateTabContent(contentDiv);
     parent.body.appendChild(contentDiv);
+}
+
+function createFooter(parent) {
+
 }
 
 createHeader(document);

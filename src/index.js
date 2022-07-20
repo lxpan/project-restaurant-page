@@ -9,9 +9,10 @@ const TAB_NAMES = ['Home', 'Menu', 'Contact'];
 const TAB_LOADER = [loadHome, loadMenu, loadContact];
 
 
-function createTabNavigation(parent) {
-    const tabGroup = document.createElement('nav');
-    tabGroup.classList.add('tabs');
+function createHeader(parent) {
+    const header = document.createElement('header');
+    const tabNavGroup = document.createElement('nav');
+    tabNavGroup.classList.add('tabs');
 
     const homeTab = document.createElement('li');
     const menuTab = document.createElement('li');
@@ -62,9 +63,10 @@ function createTabNavigation(parent) {
         })
     }
 
-    tabGroup.append(tabList);
+    tabNavGroup.append(tabList);
+    header.appendChild(tabNavGroup);
     
-    parent.body.appendChild(tabGroup);
+    parent.body.appendChild(header);
 }
 
 function populateTabContent(parent) {
@@ -101,5 +103,5 @@ function loadTabContent(parent) {
     parent.body.appendChild(contentDiv);
 }
 
-createTabNavigation(document);
+createHeader(document);
 loadTabContent(document);

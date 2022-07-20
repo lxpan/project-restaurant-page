@@ -1,3 +1,8 @@
+:root {
+    --content-background-colour: rgba(19, 5, 89, 0.8);
+    --content-font-colour: white;
+}
+
 html {
     background-image: url('./images/shinjuku-vending.jpg');
     background-attachment: fixed;
@@ -41,6 +46,10 @@ body {
     color: white;
 }
 
+.tabs a:hover {
+    color: hotpink;
+}
+
 .homeSplash {
     width: 60vw;
 }
@@ -51,7 +60,8 @@ footer {
     border: 3px solid white;
     border-radius: 10px;
 
-    background-color: rgba(105,105,105,0.8);
+    /* background-color: rgba(105,105,105,0.8); */
+    background-color: var(--content-background-colour);
     text-align: justify;
     color: white;
 

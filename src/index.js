@@ -48,6 +48,8 @@ function createHeader(parent) {
 
         tabAnchor.href = TAB_ID[i];
         tabAnchor.textContent = TAB_NAMES[i];
+        tabAnchor.classList.add('neonText', 'pulsate');
+
         tab.appendChild(tabAnchor);
 
         // add eventListener to tab

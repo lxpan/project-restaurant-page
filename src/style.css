@@ -88,13 +88,17 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: "Sacramento", sans-serif;
+@font-face {
+    font-family: 'Ultra';
+    src: url('./ultra.otf');
+    font-weight: 600;
+    font-style: normal;
 }
 
 /* Adds the neon text effect */
 .neonText {
     color: #fff;
+    font-family: 'Ultra';
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,

@@ -59,6 +59,8 @@ a:visited {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
     width: 40vw;
     border: 3px solid var(--section-border-colour);
     border-radius: 10px;
@@ -67,6 +69,13 @@ a:visited {
     text-align: justify;
     padding: 0px 80px 30px;
     /* flex: 1; */
+}
+
+.contentPane {
+    border: solid 2px white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 footer {

@@ -21,7 +21,7 @@ export default function loadHome(parent) {
     
     hoursHeading.textContent = 'Hours';
     const hoursOpen = 'Open 24 hours';
-    hoursPre.textContent = `Monday: ${hoursOpen}\nTuesday: ${hoursOpen}\nWednesday: ${hoursOpen}*\nThursday: ${hoursOpen}\nFriday: ${hoursOpen}\nSaturday: ${hoursOpen}\nSunday: ${hoursOpen}\n\n*Machines may occasionally be serviced at 12am midnight.`
+    hoursPre.textContent = `Monday: ${hoursOpen}\nTuesday: ${hoursOpen}\nWednesday: ${hoursOpen}*\nThursday: ${hoursOpen}\nFriday: ${hoursOpen}\nSaturday: ${hoursOpen}\nSunday: ${hoursOpen}\n\n*Machines may occasionally be serviced at 12am midnight.`;
     hoursPre.className = 'hoursOpen';
 
 

@@ -24,8 +24,13 @@ export default function loadMenu(parent) {
 
         return menuItem;
     }
+
+    const menuContainer = document.createElement('div');
+    const menuDrink = createMenuItem('Super Energy Drink', 'It\'s got electrolytes!', '$2', drink);
+    const menuFoodPill = createMenuItem('Food Pill', 'It\'s got nutrition!', '$4', foodPill);
+    menuContainer.append(menuDrink, menuFoodPill);
     
     headingOne.textContent = 'Menu';
 
-    parent.append(headingOne);
+    parent.append(headingOne, menuContainer);
 }

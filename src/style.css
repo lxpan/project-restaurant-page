@@ -58,30 +58,24 @@ a:visited {
     width: 60vw;
 }
 
-#content,
-footer {
+#content {
     width: 40vw;
     border: 3px solid var(--section-border-colour);
     border-radius: 10px;
-
-    /* background-color: rgba(105,105,105,0.8); */
     background-color: var(--content-background-colour);
-    text-align: justify;
     color: var(--content-font-colour);
-
+    text-align: justify;
     padding: 0px 80px 30px;
 }
 
 footer {
-    width: 100vw;
-    border: none;
-    border-radius: 0;
-    height: 30px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100vw;
+    height: 30px;
+    background-color: var(--content-background-colour);
     margin-top: 20px;
-    padding: 0;
 }
 
 .hoursOpen {

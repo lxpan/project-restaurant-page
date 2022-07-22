@@ -78,6 +78,8 @@ footer {
     height: 30px;
     background-color: var(--content-background-colour);
     margin-top: 20px;
+    /* move slightly upwards so that text can fully show*/
+    transform: translate(0, -7px);
 }
 
 .hoursOpen {

@@ -21,6 +21,7 @@ body {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    min-height: 100vh;
 }
 
 .tabContent {
@@ -66,6 +67,7 @@ a:visited {
     color: var(--content-font-colour);
     text-align: justify;
     padding: 0px 80px 30px;
+    flex: 1;
 }
 
 footer {

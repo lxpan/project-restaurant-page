@@ -1,7 +1,8 @@
 :root {
     --content-background-colour: rgba(19, 5, 89, 0.8);
     --content-font-colour: white;
-    --section-border-colour: white;
+    --outer-border-colour: #120458;
+    --inner-border-colour: #7a04eb;
     --nav-hover-colour: hotpink;
 }
 
@@ -70,7 +71,7 @@ a:visited {
 }
 
 .contentPane {
-    border: solid 2px white;
+    border: solid 2px var(--inner-border-colour);
     border-radius: 8px;
     padding: 20px;
     margin-top: 20px;

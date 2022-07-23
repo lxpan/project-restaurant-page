@@ -19,7 +19,6 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     min-height: 100vh;
 }
 
@@ -50,10 +49,6 @@ a:visited {
     color: white;
 }
 
-/* .tabs a:hover {
-    color: var(--nav-hover-colour);
-} */
-
 .homeSplash {
     width: 60vw;
 }
@@ -69,7 +64,6 @@ a:visited {
     color: var(--content-font-colour);
     text-align: justify;
     padding: 0px 80px 30px;
-    /* flex: 1; */
 }
 
 #content h1 {
@@ -93,6 +87,7 @@ footer {
     margin-top: 20px;
     /* move slightly upwards so that text can fully show*/
     transform: translate(0, -7px);
+    color: white;
 }
 
 .hoursOpen {
@@ -159,7 +154,6 @@ a:hover {
 }
 
 /* Menu Page */
-
 .menuItem {
     width: 400px;
     display: flex;

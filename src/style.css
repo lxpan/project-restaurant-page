@@ -3,6 +3,7 @@
     --content-font-colour: white;
     --outer-border-colour: #120458;
     --inner-border-colour: #7a04eb;
+    --menu-image-border-colour: #fe75fe;
     --nav-hover-colour: hotpink;
 }
 
@@ -158,7 +159,7 @@ a:hover {
     width: 400px;
     display: flex;
     flex-direction: column;
-    border: solid 2px white;
+    border: solid 2px var(--inner-border-colour);
     border-radius: 8px;
     padding: 20px;
     margin-top: 20px;   
@@ -173,6 +174,6 @@ a:hover {
     width: 250px;
     background-size: cover;
     align-self: end;
-    border: 2px solid #ff124f;
+    border: 2px solid var(--menu-image-border-colour);
     border-radius: 10px;
 }

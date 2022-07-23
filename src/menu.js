@@ -1,5 +1,6 @@
 import drink from './images/menu/brawndo.webp';
 import foodPill from './images/menu/food-pills.webp';
+import burger from './images/menu/burgerCan.jpeg';
 
 export default function loadMenu(parent) {
     const headingOne = document.createElement('h1');
@@ -28,7 +29,9 @@ export default function loadMenu(parent) {
     const menuContainer = document.createElement('div');
     const menuDrink = createMenuItem('Super Energy Drink', 'It\'s got electrolytes!', '$2', drink);
     const menuFoodPill = createMenuItem('Food Pill', 'It\'s got nutrition!', '$4', foodPill);
-    menuContainer.append(menuDrink, menuFoodPill);
+    const menuBurger = createMenuItem('Burger-In-A-Can', "It's got (real) meat!", '$10', burger);
+
+    menuContainer.append(menuDrink, menuFoodPill, menuBurger);
     
     headingOne.textContent = 'Menu';
 

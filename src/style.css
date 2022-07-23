@@ -169,6 +169,10 @@ a:hover {
     padding-left: 50px;
 }
 
+.menuItem span {
+    font-weight: bolder;
+}
+
 .menuImage {
     height: 250px;
     width: 250px;

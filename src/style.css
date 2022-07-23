@@ -62,7 +62,6 @@ a:visited {
     border-radius: 10px;
     background-color: var(--content-background-colour);
     color: var(--content-font-colour);
-    text-align: justify;
     padding: 0px 80px 30px;
 }
 

@@ -181,3 +181,21 @@ a:hover {
     border: 2px solid var(--menu-image-border-colour);
     border-radius: 10px;
 }
+
+.contactItem {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    border: solid 2px var(--inner-border-colour);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;  
+}
+
+.contactImage {
+    height: 150px;
+    background-size: cover;
+    align-self: end;
+    border: 2px solid var(--menu-image-border-colour);
+    border-radius: 10px;
+}

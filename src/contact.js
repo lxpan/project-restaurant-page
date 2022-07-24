@@ -6,18 +6,21 @@ export default function loadContact(parent) {
 
     function createContactItem(name, description, image) {
         const contactItem = document.createElement('div');
-        contactItem.classList.add('menuItem');
+        contactItem.classList.add('contactItem');
+        
         const contactName = document.createElement('h3');
         const contactDescription = document.createElement('p');
-
+        const contactInfo = document.createElement('div');
+        
         contactName.textContent = name;
         contactDescription.textContent = description;
+        contactInfo.append(contactName, contactDescription);
 
         const contactImage = new Image();
         contactImage.src = image;
-        contactImage.className = 'menuImage';
+        contactImage.className = 'contactImage';
 
-        contactItem.append(contactName, contactDescription, contactImage);
+        contactItem.append(contactInfo, contactImage);
 
         return contactItem;
     }

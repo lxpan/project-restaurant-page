@@ -165,7 +165,7 @@ a:hover {
     margin-top: 20px;   
 }
 
-.menuItem p, span {
+.menuItem p, .menuItem span {
     padding-left: 50px;
 }
 

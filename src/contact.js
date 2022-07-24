@@ -1,5 +1,6 @@
 import robo from './images/contact/robo.jpg';
 import inventor from './images/contact/gepetto.jpg';
+import vending from './images/contact/vending-machine.jpg';
 
 export default function loadContact(parent) {
     const headingOne = document.createElement('h1');
@@ -32,7 +33,8 @@ export default function loadContact(parent) {
 
     const robot = createContactItem('Robo', 'Robo tends to our vending machines.', '0400-555-2049', robo);
     const gepetto = createContactItem('Gepetto', 'Our chief inventor.', '0400-555-2049', inventor);
+    const vendingMachine = createContactItem('Vendy', 'Our vendies provide impeccable service.', '0400-555-2049', vending);
 
-    contactContainer.append(robot, gepetto);
+    contactContainer.append(robot, gepetto, vendingMachine);
     parent.append(headingOne, contactContainer);
 }

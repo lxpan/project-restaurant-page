@@ -1,20 +1,23 @@
 import robo from './images/contact/robo.jpg';
+import inventor from './images/contact/gepetto.jpg';
 
 export default function loadContact(parent) {
     const headingOne = document.createElement('h1');
     headingOne.textContent = 'Contact';
 
-    function createContactItem(name, description, image) {
+    function createContactItem(name, description, number, image) {
         const contactItem = document.createElement('div');
         contactItem.classList.add('contactItem');
         
+        const contactInfo = document.createElement('div');
         const contactName = document.createElement('h3');
         const contactDescription = document.createElement('p');
-        const contactInfo = document.createElement('div');
+        const contactNumber = document.createElement('span');
         
         contactName.textContent = name;
         contactDescription.textContent = description;
-        contactInfo.append(contactName, contactDescription);
+        contactNumber.textContent = number;
+        contactInfo.append(contactName, contactDescription, contactNumber);
 
         const contactImage = new Image();
         contactImage.src = image;
@@ -27,8 +30,9 @@ export default function loadContact(parent) {
 
     const contactContainer = document.createElement('div');
 
-    const robot = createContactItem('Robo', 'Robo tends to our vending machines.', robo);
+    const robot = createContactItem('Robo', 'Robo tends to our vending machines.', '0400-555-2049', robo);
+    const gepetto = createContactItem('Gepetto', 'Our chief inventor.', '0400-555-2049', inventor);
 
-    contactContainer.append(robot);
+    contactContainer.append(robot, gepetto);
     parent.append(headingOne, contactContainer);
 }

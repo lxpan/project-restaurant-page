@@ -2,6 +2,7 @@ import loadHome from "./home.js";
 import loadMenu from './menu';
 import loadContact from './contact.js';
 import './style.css';
+import credits from './attribution.txt';
 
 
 const TAB_ID = ['#tabOne', '#tabTwo', '#tabThree'];
@@ -110,6 +111,7 @@ function createFooter(parent) {
     const bgCredit = document.createElement('span');
     const bgCreditLink = document.createElement('a');
     const otherCredit = document.createElement('span');
+    const otherCreditLink = document.createElement('a');
 
     const disclaimer = document.createElement('span');
     disclaimer.textContent = 'Created for The Odin Project';
@@ -120,7 +122,11 @@ function createFooter(parent) {
     bgCredit.textContent = 'Background photo by ';
     bgCredit.appendChild(bgCreditLink);
 
-    otherCredit.textContent = 'Other images sourced from pexels.com';
+    otherCredit.textContent = 'Full image attribution ';
+    otherCreditLink.textContent = 'here';
+    otherCreditLink.href = credits;
+    otherCreditLink.style.textDecoration = 'underline';
+    otherCredit.appendChild(otherCreditLink);
 
     footer.append(bgCredit, otherCredit, disclaimer);
 

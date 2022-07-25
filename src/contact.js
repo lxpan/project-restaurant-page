@@ -21,6 +21,7 @@ export default function loadContact(parent) {
         contactNumber.textContent = number;
         contactEmail.textContent = email;
         contactInfo.append(contactName, contactDescription, contactNumber, contactEmail);
+        contactInfo.classList.add('contactInfo');
 
         const contactImage = new Image();
         contactImage.src = image;
@@ -35,7 +36,7 @@ export default function loadContact(parent) {
 
     const robot = createContactItem('Robo', 'Robo tends to our vending machines.', '0400-555-2049', 'notarealemail@2049.corp', robo);
     const gepetto = createContactItem('Gepetto', 'Our chief inventor.', '0400-555-2049', 'notarealemail@2049.corp', inventor);
-    const vendingMachine = createContactItem('Vendy', 'Our vendies provide impeccable service.', '0400-555-2049', 'notarealemail@2049.corp.corp', vending);
+    const vendingMachine = createContactItem('Vendy', 'Our vendies provide impeccable service.', '0400-555-2049', 'notarealemail@2049.corp', vending);
 
     contactContainer.append(robot, gepetto, vendingMachine);
     parent.append(headingOne, contactContainer);

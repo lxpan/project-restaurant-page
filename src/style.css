@@ -116,7 +116,7 @@ footer {
 }
 
 /* Adds the neon border effect */
-a {
+.neonText {
     font-size: 1.8rem;
     border: 0.2rem solid #fff;
     border-radius: 2rem;
@@ -129,7 +129,7 @@ a {
         inset 0 0 1.3rem #bc13fe;
 }
 
-a:hover {
+.neonText:hover {
     color: hotpink;
     text-shadow:
         0 0 7px #ff124f,

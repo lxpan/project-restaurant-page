@@ -194,6 +194,10 @@ a:hover {
     align-items: center;
 }
 
+.contactInfo h3 {
+    margin-top: 0;
+}
+
 .contactInfo p:nth-child(n+3) {
     margin: 0;
     font-size: .8rem;

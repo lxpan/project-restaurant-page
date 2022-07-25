@@ -106,18 +106,23 @@ function loadTabContent(parent) {
 
 function createFooter(parent) {
     const footer = document.createElement('footer');
+    
     const bgCredit = document.createElement('span');
+    const bgCreditLink = document.createElement('a');
     const otherCredit = document.createElement('span');
 
-    const bgCreditLink = document.createElement('a');
+    const disclaimer = document.createElement('span');
+    disclaimer.textContent = 'Created for The Odin Project';
+
     bgCreditLink.href = "https://www.pexels.com/photo/lighted-vending-machines-on-street-2338113/";
     bgCreditLink.textContent = 'Aleksandar Pasaric';
-    
+    bgCreditLink.style.textDecoration = 'underline';
     bgCredit.textContent = 'Background photo by ';
     bgCredit.appendChild(bgCreditLink);
-    otherCredit.textContent = 'Other credits go to: ___';
 
-    footer.append(bgCredit, otherCredit);
+    otherCredit.textContent = 'Other images sourced from pexels.com';
+
+    footer.append(bgCredit, otherCredit, disclaimer);
 
     parent.body.appendChild(footer);
 }

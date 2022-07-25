@@ -36,7 +36,6 @@ body {
     display: flex;
     gap: 10px;
     padding-left: 0px;
-    /* background-color: gold; */
     font-size: 2rem;
 }
 
@@ -118,10 +117,9 @@ footer {
         0 0 151px #bc13fe;
 }
 
-/* Adds the neon border effect &=*/
+/* Adds the neon border effect */
 a {
     font-size: 1.8rem;
-    /* animation: pulsate 10s infinite alternate; */
     border: 0.2rem solid #fff;
     border-radius: 2rem;
     padding: 0.4em;
@@ -190,7 +188,6 @@ a:hover {
     border-radius: 8px;
     padding: 20px;
     margin-top: 20px;  
-    /* justify-items: center; */
     align-items: center;
 }
 

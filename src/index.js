@@ -116,7 +116,7 @@ function createFooter(parent) {
     const disclaimer = document.createElement('span');
     disclaimer.textContent = 'Created for The Odin Project';
 
-    bgCreditLink.href = "https://www.pexels.com/photo/lighted-vending-machines-on-street-2338113/";
+    bgCreditLink.href = 'https://www.pexels.com/photo/lighted-vending-machines-on-street-2338113/';
     bgCreditLink.textContent = 'Aleksandar Pasaric';
     bgCreditLink.style.textDecoration = 'underline';
     bgCredit.textContent = 'Background photo by ';

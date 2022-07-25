@@ -108,8 +108,13 @@ function createFooter(parent) {
     const footer = document.createElement('footer');
     const bgCredit = document.createElement('span');
     const otherCredit = document.createElement('span');
+
+    const bgCreditLink = document.createElement('a');
+    bgCreditLink.href = "https://www.pexels.com/photo/lighted-vending-machines-on-street-2338113/";
+    bgCreditLink.textContent = 'Aleksandar Pasaric';
     
-    bgCredit.textContent = 'Background photo by Aleksandar Pasaric';
+    bgCredit.textContent = 'Background photo by ';
+    bgCredit.appendChild(bgCreditLink);
     otherCredit.textContent = 'Other credits go to: ___';
 
     footer.append(bgCredit, otherCredit);
